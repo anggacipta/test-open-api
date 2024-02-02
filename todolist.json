@@ -1,0 +1,42 @@
+{
+ "openapi": "3.0.3",
+  "info": {
+    "title": "Todolist RESTful API",
+    "version": "1",
+    "description": "OpenAPI for Todolist RESTful API",
+    "termsOfService": "https://acna.com",
+    "contact": {
+      "name": "Angga Cipta Pranata",
+      "email": "angga.cipta.pranata@gmail.com",
+      "url": "https://www.acna.com"
+    },
+    "license": {
+      "name": "Apache-2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "servers": [
+    {
+      "description": "Todolist RESTful API Server",
+      "url": "https://{environment}.acna.com/api/v1",
+      "variables": {
+        "environment": {
+          "description": "Server Environment",
+          "default": "dev",
+          "enum": [
+            "dev",
+            "qa",
+            "prod"
+          ]
+        }
+      }
+    }
+  ],
+  "externalDocs": {
+    "description": "Coba Saja",
+    "url": "https://cobasaja.com"
+  },
+  "paths": {
+
+  }
+}
